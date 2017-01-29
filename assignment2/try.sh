@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Bash version ${BASH_VERSION}..."
-for i in {0..10..2}
+j=10
+for i in $(eval echo "{0..$j..2}")
     do 
 	echo "Welcome $i times"
     done
